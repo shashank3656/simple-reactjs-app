@@ -3,10 +3,7 @@ USER root
 RUN mkdir -p /usr/app
 WORKDIR /usr/app
 COPY . /usr/app
-RUN npm cache clean --force
-RUN npm install --silent
-RUN npm install react-scripts@1.1.1 -g --silent
-RUN npm install --save react react-dom react-scripts
+RUN npm install
 RUN npm run build
 EXPOSE 3000
 CMD npm run deploy
