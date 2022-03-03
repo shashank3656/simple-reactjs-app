@@ -4,7 +4,7 @@ RUN mkdir -p /usr/app
 WORKDIR /usr/app
 COPY . /usr/app
 RUN npm cache clean --force
-RUN npm install -g @angular/cli
+RUN npm install --save react react-dom react-scripts
 RUN npm run build
 EXPOSE 3000
 CMD "npm" "run" "dev"
