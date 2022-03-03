@@ -7,4 +7,4 @@ RUN npm cache clean --force
 RUN npm install --save react react-dom react-scripts
 RUN npm run build
 EXPOSE 3000
-CMD "npm" "run" "dev"
+CMD "npm" "run" "build"
